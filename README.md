@@ -72,14 +72,19 @@ Strong baseline performance due to rich feature engineering
 **Late-level fusion**: Prediction-level ensembling (weighted averaging, stacking)
 
 ## Results Summary
-**Model Strategy	Validation R²
-Tabular-only (LightGBM)	0.8837
-Image-only (ConvNeXt)	~0.43
-Image Ensemble (PCA + LGBM)	~0.45
-Mid-level Fusion (XGBoost)	~0.829
-Late-level Fusion	Worse than baseline**
+**Model Strategy	Validation R²**
 
-Key Insight:
+**Tabular-only (LightGBM)	0.8837**
+
+**Image-only (ConvNeXt)	~0.43**
+
+**Image Ensemble (PCA + LGBM)	~0.45**
+
+**Mid-level Fusion (XGBoost)	~0.829**
+
+**Late-level Fusion	Worse than baseline**
+
+**Key Insight:**
 Tabular data dominates property valuation. Satellite imagery provides complementary but limited signal and must be carefully integrated to avoid degrading performance.
 
 ## Explainability
