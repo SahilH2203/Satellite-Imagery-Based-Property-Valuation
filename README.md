@@ -8,7 +8,7 @@ The goal is to evaluate whether environmental and neighborhood-level visual cues
 The project goes beyond standard regression by integrating computer vision, feature engineering, and ensemble learning into a unified system.
 
 ## Dataset
-#### 1. Tabular Data
+### 1. Tabular Data
 
 Includes property-level attributes such as:
 
@@ -32,7 +32,7 @@ house_life, ren_age, lot_util, bath_per_bed
 
 Outliers are clipped, skewed variables transformed, and features normalized.
 
-#### 2. Satellite Imagery
+### 2. Satellite Imagery
 
 Collected programmatically using the Mapbox Static Images API
 
@@ -45,7 +45,7 @@ Consistent zoom and resolution
 Stored and aligned using a unique property id
 
 ## Modeling Approach
-#### 1. Image Models
+### 1. Image Models
 
 Three CNN backbones were fine-tuned for image-only price regression:
 
@@ -57,13 +57,13 @@ Three CNN backbones were fine-tuned for image-only price regression:
 
 Image embeddings were extracted and reduced using PCA (256 dimensions).
 
-#### 2. Tabular Models
+### 2. Tabular Models
 
 **LightGBM** (LGBM) used as the primary tabular model
 
 Strong baseline performance due to rich feature engineering
 
-#### 3. Fusion Strategies
+### 3. Fusion Strategies
 
 **Image-only models**: CNN → embeddings → regression
 
